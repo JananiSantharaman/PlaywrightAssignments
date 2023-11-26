@@ -13,3 +13,23 @@
 5. Call the function and print the result
 
 */
+
+
+//declare variable
+var inputNumber = -11
+var outputvalue = checkNumberType(inputNumber)
+console.log(outputvalue)
+//function
+function checkNumberType(number) {
+    if (number > 0) {
+        return "the Number (" + number + ") is greater than Zero"
+
+    } else if (number < 0) {
+        return "the Number (" + number + ") is less than Zero"
+
+    } else {
+        return "the Number (" + number + ") is equal to Zero"
+
+    }
+
+}
