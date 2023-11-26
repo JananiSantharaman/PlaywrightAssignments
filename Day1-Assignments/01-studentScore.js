@@ -21,22 +21,22 @@ var grade = calculateGrade(studentScore)
 console.log(grade)
 //function
 function calculateGrade(score) {
-    if ((typeof score === "number") && (score <= 100)){
-    switch (true) {
-        case (score >= 60 && score <= 100):
-            return "Student grade is - A"
-            break;
-        case (score >= 50 && score <= 59):
-            return "Student grade is - B"
-            break;
-        case (score >= 40 && score <= 49):
-            return "Student grade is - C"
-            break;
-        default: (score < 40)
-            return "Student grade is - D"
-            break;
+    if ((typeof score === "number") && (score <= 100)) {
+        switch (true) {
+            case (score >= 60 && score <= 100):
+                return "Student grade is - A"
+                break;
+            case (score >= 50 && score <= 59):
+                return "Student grade is - B"
+                break;
+            case (score >= 40 && score <= 49):
+                return "Student grade is - C"
+                break;
+            default: (score < 40)
+                return "Student grade is - D"
+                break;
+        }
+    } else {
+        return "Please enter a valid score"
     }
-}else{
-    return "Please enter a valid score"
-}      
 }

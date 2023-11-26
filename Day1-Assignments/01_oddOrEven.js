@@ -15,10 +15,10 @@ var outputValue = checkOddOrEven(checkNumber)
 console.log(outputValue)
 //function
 function checkOddOrEven(number) {
-if (number % 2 === 0){
-    return "The number is even"
-    
-}else{
-    return "The number is odd"
-}
+    if (number % 2 === 0) {
+        return "The number is even"
+
+    } else {
+        return "The number is odd"
+    }
 }
