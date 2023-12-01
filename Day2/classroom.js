@@ -14,7 +14,7 @@ for (let i = 0; i < range; i++) {
         output += i
     }
 }
-//console.log(output) 
+////console.log(output) 
 
 //funtion to sum all the values between 1 to n 
 //and return the sum
@@ -23,7 +23,7 @@ for (let i = 0; i < range; i++) {
 // finally, i need the sum !! 
 var inputNumber = 9
 var sumValue = addNumbers(inputNumber)
-//console.log(sumValue) 
+////console.log(sumValue) 
 function addNumbers(inputVal) {
     var outputVal = 0
     var sequence = ""
@@ -37,12 +37,12 @@ function addNumbers(inputVal) {
 //Palindrome and reverse
 var nameVl = 'Madam'
 var output = reverseStringfn(nameVl)
-console.log(output)
+////console.log(output)
 //check if it is Palindrome
 if (output.toLowerCase() === nameVl.toLowerCase()) {
-    console.log("Its a Palindrome")
+    //console.log("Its a Palindrome")
 } else {
-    console.log("Its not a Palindrome")
+    //console.log("Its not a Palindrome")
 }
 //reverse string
 function reverseStringfn(stringVal) {
@@ -52,4 +52,26 @@ function reverseStringfn(stringVal) {
         outputval += element1
     }
     return outputval
+}
+
+let str = 'string';
+for (let char of str) {
+    ////console.log(char); //s,t,r,i,n,g
+}
+
+//find the index of the first duplicate 
+const values = [2, 4, 5, 5, 1, 2,5]
+for (let i = 0; i < values.length; i++) {
+    const element = values[i];
+    var matchCount = 0
+    for (let j = 0; j < values.length; j++) {
+        const element2 = values[j];
+        if (element === element2) {
+            matchCount++
+            // console.log("firstmatch " + matchCount)      
+        }
+    }
+    if (matchCount > 1) {
+        console.log("No. of Occurence of " + element + " = " + matchCount)
+    }
 }
